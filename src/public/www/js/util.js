@@ -1,31 +1,31 @@
 export function throttle(callback, delay) {
-  let last, timer
+	let last, timer
 
-  return function () {
-    let context = this, now = +new Date(), args = arguments
+	return function () {
+		let context = this, now = +new Date(), args = arguments
 
-    if (last && now < last + delay) {
-      clearTimeout(timer)
+		if (last && now < last + delay) {
+			clearTimeout(timer)
 
-      timer = setTimeout(() => {
-        last = now
-        callback.apply(context, args)
-      }, delay)
-    } else {
-      last = now
-      callback.apply(context, args)
-    }
-  }
+			timer = setTimeout(() => {
+				last = now
+				callback.apply(context, args)
+			}, delay)
+		} else {
+			last = now
+			callback.apply(context, args)
+		}
+	}
 }
 
 export function debounce(callback, delay) {
-  let timer
+	let timer
 
-  return function () {
-    let args = arguments, context = this
+	return function () {
+		let args = arguments, context = this
 
-    clearTimeout(timer)
+		clearTimeout(timer)
 
-    timer = setTimeout(() => callback.apply(context, args), delay)
-  }
+		timer = setTimeout(() => callback.apply(context, args), delay)
+	}
 }
