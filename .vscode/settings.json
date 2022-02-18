@@ -8,9 +8,6 @@
     "[typescript]": {
         "editor.defaultFormatter": "denoland.vscode-deno"
     },
-    "[javascript]": {
-        "editor.defaultFormatter": "denoland.vscode-deno"
-    },
     "deno.suggest.imports.hosts": {
         "https://deno.land": false
     }
