@@ -1,0 +1,17 @@
+:root {
+    --color1: #fff;
+    --color2: #bdbdbd;
+    --color3: #424242;
+    --color4: #262626;
+}
+
+* {
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+html {
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,167 @@
+@import './font.css';
+@import './global.css';
+
+/*
+
+    Menu
+
+*/
+.menu {
+    position: fixed;
+    top: 1.5vmax;
+    right: 50%;
+    z-index: 1;
+    
+    height: 3vmax;
+    width: 40vmax;
+    
+    background-color: var(--color1);
+    
+    border-radius: 0.35vmax;
+    
+    -webkit-box-shadow: 0.05vmax 0.051vmax 0.2vmax -0.1vmax var(--color3);
+    box-shadow: 0.05vmax 0.05vmax 0.2vmax -0.1vmax var(--color3);
+    
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+}
+
+.menu .links {
+    display: grid;
+    grid-template-columns: 30% auto 30%;
+    
+    position: absolute;
+    right: 50%;
+    
+    height: 100%;
+    width: 95%;
+    
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+}
+
+.menu .split {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.menu a, .menu .title {
+    margin: auto;
+    
+    height: 1.25vmax;
+    
+    padding: 0.5vmax 0.75vmax;
+    
+    font-family: 'ailerons';
+    font-size: 1vmax;
+    
+    color: #383838;
+    
+    text-align: center;
+    text-decoration: none;
+    
+    -webkit-transition: 0.2s color;
+    transition: 0.2s color;
+}
+
+.menu a:hover, .menu a.hover {
+    color: var(--color2);
+}
+
+.menu .title {
+    height: 2vmax;
+    
+    font-size: 1.75vmax;
+}
+
+/*
+
+    Home
+
+*/
+.home {
+    height: 39.5vmax;
+    width: 100%;
+    
+    background-color: var(--color4);
+}
+
+.home .background {
+    position: absolute;
+    top: 7.5vmax;
+    
+    height: 25.5vmax;
+    width: 100%;
+    
+    background-size: cover;
+    background-image: url('/resource/img/background-standard.webp');
+    background-position: 0 25%;
+}
+
+@media (min-width: 1300px) {
+    .home .background {
+        background-image: url('/resource/img/background-medium.webp');
+    }
+}
+
+@media (min-width: 2048px) {
+    .home .background {
+        background-image: url('/resource/img/background-big.webp');
+    }
+}
+
+.home .content {
+    top: 17.5vmax;
+    
+    color: var(--color1);
+    
+    text-align: center;
+    text-shadow: 0.2rem 0.2rem 0.1rem  var(--color3);
+}
+
+.home h1 {
+    font-family: 'ostrich_sansblack';
+    font-size: 4.3vmax;
+}
+
+.home h1 span {
+    font-family: 'ostrich_sanslight';
+    font-size: 4.7vmax;
+}
+
+.home h2 {
+    margin-top: 0.85vmax;
+    
+    font-family: 'barlowlight';
+    font-size: 0.95vmax;
+}
+
+/*
+
+    Project
+
+*/
+.project {
+    z-index: 1;
+    
+    height: 37.5vmax;
+    width: 100%;
+    
+    background-color: var(--color1);
+    
+    clip-path: polygon(0 2vmax, 0% 100%, 100% 100%, 100% 0);
+    
+    transform: translateY(-2vmax)
+}
+
+/*
+
+    Contact
+
+*/
+.contact {
+    height: 37.5vmax;
+    width: 100%;
+    
+    background-color: var(--color2);
+}

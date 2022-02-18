@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'ailerons';
+    src: url('/resource/font/ailerons.woff2') format('woff2'),
+         url('/resource/font/ailerons.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'barlowlight';
+    src: url('/resource/font/barlow-light.woff2') format('woff2'),
+         url('/resource/font/barlow-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'barlowmedium';
+    src: url('/resource/font/barlow-medium.woff2') format('woff2'),
+         url('/resource/font/barlow-medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'barlowregular';
+    src: url('/resource/font/barlow-regular.woff2') format('woff2'),
+         url('/resource/font/barlow-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ostrich_sansmedium';
+    src: url('/resource/font/ostrich-regular.woff2') format('woff2'),
+         url('/resource/font/ostrich-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ostrich_sansblack';
+    src: url('/resource/font/ostrichsans-black.woff2') format('woff2'),
+         url('/resource/font/ostrichsans-black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ostrich_sanslight';
+    src: url('/resource/font/ostrichsans-light.woff2') format('woff2'),
+         url('/resource/font/ostrichsans-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
