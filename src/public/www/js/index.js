@@ -1,4 +1,4 @@
-import { throttle } from "./util.js"
+import { debounce } from "./util.js"
 
 // Menu
 
@@ -28,4 +28,4 @@ const scroll_detection = () => {
 
 scroll_detection()
 
-window.addEventListener("scroll", throttle(scroll_detection, 100))
+window.addEventListener("scroll", debounce(scroll_detection, 100))
