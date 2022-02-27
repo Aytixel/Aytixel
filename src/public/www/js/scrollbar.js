@@ -1,4 +1,4 @@
-import { throttle } from "./util.js"
+import { throttle, clamp } from "./util.js"
 
 // Scrollbar
 
@@ -117,9 +117,9 @@ class ScrollBarElement extends HTMLElement {
 		shadow.appendChild(style)
 
 		// mouse & touch scroll
-		const scroll_on = document.querySelector("html")
+		const scroll_on = document.getElementsByTagName("html")[0]
 		const apply_mouse_scroll = e => {
-			const scroll_progress = Math.min(track.clientHeight - thumb.clientHeight, Math.max(0, e.clientY - track.offsetTop - thumb.clientHeight / 2)) / (track.clientHeight - thumb.clientHeight)
+			const scroll_progress = clamp(0, track.clientHeight - thumb.clientHeight, e.clientY - track.offsetTop - thumb.clientHeight / 2) / (track.clientHeight - thumb.clientHeight)
 
 			scroll_on.scrollTop = (scroll_on.scrollHeight - scroll_on.clientHeight) * scroll_progress
 		}

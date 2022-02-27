@@ -29,3 +29,7 @@ export function debounce(callback, delay) {
 		timer = setTimeout(() => callback.apply(context, args), delay)
 	}
 }
+
+export function clamp(min, max, value) {
+	return Math.min(max, Math.max(min, value))
+}
