@@ -1,4 +1,4 @@
-import { throttle, clamp } from "./util.js"
+import { clamp } from "./util.js"
 
 // Scrollbar
 
@@ -127,6 +127,8 @@ class ScrollBarElement extends HTMLElement {
 			e.preventDefault()
 
 			if (e.changedTouches) e = e.changedTouches[0]
+			
+			requestAnimationFrame(() => scroll_on.style.scrollBehavior = "unset")
 
 			apply_mouse_scroll(e)
 
@@ -138,15 +140,17 @@ class ScrollBarElement extends HTMLElement {
 			window.addEventListener('touchcancel', end)
 			window.addEventListener('touchleave', end)
 		}
-		const move = throttle(e => {
+		const move = e => {
 			e.preventDefault()
 
 			if (e.changedTouches) e = e.changedTouches[0]
 
 			apply_mouse_scroll(e)
-		}, 64)
+		}
 		const end = e => {
 			e.preventDefault()
+			
+			scroll_on.style.scrollBehavior = ""
 
 			window.removeEventListener('mousemove', move)
 			window.removeEventListener('touchmove', move)
