@@ -57,7 +57,7 @@ class ScrollBarElement extends HTMLElement {
 
 				border-radius: 0.25vmax;
 
-				background-color: ${this.getAttribute('bg-color')};
+				background-color: var(--scroll-bar-bg-color);
 				
 				opacity: 0;
 
@@ -82,7 +82,7 @@ class ScrollBarElement extends HTMLElement {
 				
 				border-radius: 0.25vmax;
 				
-				background-color: ${this.getAttribute('color')};
+				background-color: var(--scroll-bar-color);
 				
 				transition: 0.033s margin-top;
 				

@@ -3,6 +3,8 @@
     --color2: #bdbdbd;
     --color3: #424242;
     --color4: #262626;
+    --scroll-bar-color: var(--color3);
+    --scroll-bar-bg-color: var(--color2);
 }
 
 * {
