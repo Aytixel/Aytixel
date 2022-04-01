@@ -16,6 +16,10 @@
 
 html {
     scroll-behavior: smooth;
+    
+    font-family: 'barlowlight';
+
+    color: var(--color4);
 }
 
 /*
