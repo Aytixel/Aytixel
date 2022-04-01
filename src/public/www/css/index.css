@@ -79,14 +79,14 @@
     Home
 
 */
-.home {
+#home {
     height: 39.5vmax;
     width: 100%;
     
     background-color: var(--color4);
 }
 
-.home .background {
+#home .background {
     position: absolute;
     top: 7.5vmax;
     
@@ -99,18 +99,18 @@
 }
 
 @media (min-width: 1300px) {
-    .home .background {
+    #home .background {
         background-image: url('/resource/img/background-medium.webp');
     }
 }
 
 @media (min-width: 2048px) {
-    .home .background {
+    #home .background {
         background-image: url('/resource/img/background-big.webp');
     }
 }
 
-.home .content {
+#home .content {
     top: 17.5vmax;
     
     color: var(--color1);
@@ -119,17 +119,17 @@
     text-shadow: 0.2rem 0.2rem 0.1rem  var(--color3);
 }
 
-.home h1 {
+#home h1 {
     font-family: 'ostrich_sansblack';
     font-size: 4.3vmax;
 }
 
-.home h1 span {
+#home h1 span {
     font-family: 'ostrich_sanslight';
     font-size: 4.7vmax;
 }
 
-.home h2 {
+#home h2 {
     margin-top: 0.85vmax;
     
     font-family: 'barlowlight';
@@ -141,7 +141,7 @@
     Project
 
 */
-.project {
+#project {
     z-index: 1;
     
     height: 37.5vmax;
@@ -159,7 +159,7 @@
     Contact
 
 */
-.contact {
+#contact {
     height: 37.5vmax;
     width: 100%;
     
