@@ -142,6 +142,8 @@
 
 */
 #project {
+    position: absolute;
+    top: 37.5vmax;
     z-index: 1;
     
     height: 37.5vmax;
@@ -150,8 +152,6 @@
     background-color: var(--color1);
     
     clip-path: polygon(0 2vmax, 0% 100%, 100% 100%, 100% 0);
-    
-    transform: translateY(-2vmax)
 }
 
 /*
@@ -160,7 +160,9 @@
 
 */
 #contact {
-    height: 37.5vmax;
+    margin-top: 35.5vmax;
+
+    height: 35.5vmax;
     width: 100%;
     
     background-color: var(--color2);
